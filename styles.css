@@ -33,9 +33,10 @@
 
 html {
   font-size: 16px;
-  scroll-behavior: auto;          /* JS handles smooth scroll */
+  scroll-behavior: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -179,7 +180,7 @@ ul { list-style: none; }
 /* =================================================================
    SECTION COMMONS
    ================================================================= */
-section { padding: 5rem 0; }
+section { padding: 5rem 0; overflow: hidden; position: relative; }
 section h2 {
   font-family: var(--font-heading);
   font-weight: 700;
